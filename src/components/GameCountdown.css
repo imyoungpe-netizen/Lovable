@@ -1,0 +1,13 @@
+.game-countdown-timer { transition: color .2s ease, filter .2s ease; }
+.game-countdown-timer.tone-green { color: #9bdd9c !important; }
+.game-countdown-timer.tone-yellow { color: #f0dc7a !important; }
+.game-countdown-timer.tone-orange { color: #ffb267 !important; }
+.game-countdown-timer.tone-red { color: #ff8177 !important; }
+.game-countdown-timer.is-urgent { animation: game-countdown-pulse .52s ease-in-out infinite alternate; }
+@keyframes game-countdown-pulse {
+  from { filter: brightness(.82); opacity: .82; }
+  to { filter: brightness(1.28); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .game-countdown-timer.is-urgent { animation: none; }
+}

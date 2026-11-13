@@ -1,0 +1,77 @@
+.player-avatar-trigger {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  line-height: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.player-avatar-trigger:focus-visible {
+  outline: 2px solid #e0c578;
+  outline-offset: 3px;
+}
+.da-player-profile-overlay {
+  position: fixed;
+  z-index: 200;
+  inset: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: rgba(4,5,8,.78);
+  backdrop-filter: blur(9px);
+}
+.da-player-profile-dialog {
+  position: fixed;
+  z-index: 201;
+  top: 50%;
+  left: 50%;
+  width: min(720px, calc(100vw - var(--da-safe-area-left) - var(--da-safe-area-right) - 28px));
+  max-height: min(90vh, calc(100vh - var(--da-safe-area-top) - var(--da-safe-area-bottom) - 24px));
+  max-height: min(90dvh, calc(100dvh - var(--da-safe-area-top) - var(--da-safe-area-bottom) - 24px));
+  overflow-y: auto;
+  padding: 22px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(218,190,116,.24);
+  border-radius: 20px;
+  outline: none;
+  background: linear-gradient(145deg,#1c1e23,#111319);
+  box-shadow: 0 28px 90px rgba(0,0,0,.58);
+  scrollbar-color: #49443a transparent;
+  scrollbar-width: thin;
+}
+.da-player-profile-dialog .da-profile-page {
+  width: 100%;
+  padding: 4px 0 14px;
+}
+.da-player-profile-close {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 13px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  background: rgba(18,19,24,.9);
+  color: #bbb5a7;
+}
+.da-player-profile-close:hover {
+  border-color: rgba(218,190,116,.38);
+  color: #e3ce8b;
+}
+@media (max-width: 560px) {
+  .da-player-profile-dialog {
+    width: calc(100vw - var(--da-safe-area-left) - var(--da-safe-area-right) - 18px);
+    max-height: calc(100vh - var(--da-safe-area-top) - var(--da-safe-area-bottom) - 18px);
+    max-height: calc(100dvh - var(--da-safe-area-top) - var(--da-safe-area-bottom) - 18px);
+    padding: 15px;
+    border-radius: 16px;
+  }
+}

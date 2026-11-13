@@ -1,0 +1,26 @@
+.admin-system-status { min-width: 0; padding: 18px; }
+.admin-system-status-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.admin-system-status-heading h2 { display: flex; align-items: center; gap: 8px; margin: 5px 0; color: #e5dfd2; font-family: var(--font-display); font-size: 19px; }
+.admin-system-status-heading h2 svg { color: #cbb36d; }
+.admin-system-status-heading p { max-width: 620px; margin: 0; color: #9b9890; font-size: 11px; line-height: 1.5; }
+.admin-system-status-heading > button { flex: 0 0 auto; }
+.admin-system-status-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 15px; }
+.admin-system-status-tile { display: flex; align-items: flex-start; gap: 9px; min-width: 0; padding: 11px; border: 1px solid rgba(255,255,255,.07); border-radius: 12px; background: rgba(255,255,255,.018); color: #a79f91; }
+.admin-system-status-tile > svg { flex: 0 0 auto; margin-top: 1px; }
+.admin-system-status-tile.is-ok > svg { color: #8fca9a; }
+.admin-system-status-tile.is-warning > svg { color: #e2ad69; }
+.admin-system-status-tile > span { display: grid; grid-template-columns: 16px 1fr; align-items: center; gap: 2px 6px; min-width: 0; }
+.admin-system-status-tile > span > svg { color: #cbb36d; }
+.admin-system-status-tile b { color: #e3dccd; font-size: 10px; }
+.admin-system-status-tile small { grid-column: 1 / -1; color: #918c86; font-size: 9px; line-height: 1.35; overflow-wrap: anywhere; }
+.admin-system-workers { display: grid; gap: 7px; margin-top: 15px; }
+.admin-system-workers > .eyebrow { margin-bottom: 2px; }
+.admin-system-worker { display: flex; align-items: center; gap: 7px; min-width: 0; color: #b9b3a8; font-size: 10px; }
+.admin-system-worker svg { flex: 0 0 auto; color: #d8af69; }
+.admin-system-worker span { flex: 1; }
+.admin-system-worker b { color: #8fca9a; font-size: 9px; font-weight: 500; }
+.admin-system-checked { margin: 12px 0 0; color: #77737a; font-size: 9px; text-align: right; }
+.admin-system-status-message { margin: 16px 0 0; color: #aaa6a1; font-size: 11px; }
+.admin-system-status-message.is-error { color: #d69a8d; }
+.admin-system-status-message button { color: #dfc77e; text-decoration: underline; }
+@media (max-width: 480px) { .admin-system-status { padding: 14px; } }

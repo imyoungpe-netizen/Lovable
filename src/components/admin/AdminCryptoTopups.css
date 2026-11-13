@@ -1,0 +1,37 @@
+.admin-crypto-topups { display: grid; gap: 17px; padding: 18px; }
+.admin-crypto-topups-heading { display: flex; gap: 12px; align-items: flex-start; }
+.admin-crypto-topups-icon { display: grid; width: 38px; height: 38px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(210,180,102,.2); border-radius: 11px; color: #d2b466; background: rgba(210,180,102,.07); }
+.admin-crypto-topups-heading .eyebrow { margin: 0 0 6px; color: #bca66d; font-size: 8px; letter-spacing: .13em; }
+.admin-crypto-topups-heading h2 { margin: 0 0 5px; color: #e5dfd2; font: 600 17px var(--font-display); }
+.admin-crypto-topups-heading p:last-child { max-width: 620px; margin: 0; color: #85858a; font-size: 9px; line-height: 1.55; }
+.admin-crypto-network-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.admin-crypto-network-field { display: grid; gap: 7px; min-width: 0; padding: 11px; border: 1px solid rgba(255,255,255,.07); border-radius: 11px; background: rgba(0,0,0,.13); }
+.admin-crypto-network-field > span { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.admin-crypto-network-field b { color: #ded8ca; font-size: 9px; font-weight: 600; }
+.admin-crypto-network-field small { color: #77777d; font-size: 8px; white-space: nowrap; }
+.admin-crypto-network-field input { width: 100%; min-width: 0; height: 38px; padding: 0 10px; border: 1px solid rgba(255,255,255,.09); border-radius: 8px; outline: 0; color: #e7e1d5; background: #111216; font: 9px var(--app-font-mono); }
+.admin-crypto-network-field input:focus { border-color: rgba(210,180,102,.5); }
+.admin-crypto-network-field input::placeholder { color: #65656b; }
+.admin-crypto-network-field input:disabled { opacity: .56; cursor: not-allowed; }
+.admin-crypto-price-field { display: grid; gap: 7px; max-width: 260px; color: #ded8ca; font-size: 9px; }
+.admin-crypto-price-field input { height: 38px; padding: 0 10px; border: 1px solid rgba(255,255,255,.09); border-radius: 8px; outline: 0; color: #e7e1d5; background: #111216; font: 10px var(--app-font-mono); }
+.admin-crypto-price-field input:focus { border-color: rgba(210,180,102,.5); }
+.admin-crypto-enable { display: flex; gap: 8px; align-items: center; color: #ded8ca; cursor: pointer; }
+.admin-crypto-enable input { accent-color: #cdb56f; }
+.admin-crypto-enable span { display: grid; gap: 3px; }
+.admin-crypto-enable b { font-size: 9px; font-weight: 600; }
+.admin-crypto-enable small { color: #85858a; font-size: 8px; }
+.admin-crypto-topups-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.admin-crypto-topups-footer p { display: flex; gap: 7px; align-items: flex-start; max-width: 470px; margin: 0; color: #aaa18e; font-size: 9px; line-height: 1.5; }
+.admin-crypto-topups-footer p svg { flex: 0 0 auto; color: #cdb56f; }
+.admin-crypto-topups-footer .outline-button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 38px; padding: 0 12px; white-space: nowrap; }
+.admin-crypto-topups-footer .outline-button:disabled { opacity: .45; cursor: not-allowed; }
+.admin-crypto-topups-notice { margin: 0; color: #b6d3ae; font-size: 9px; line-height: 1.5; }
+.admin-crypto-topups-notice.is-error { color: #d29a8d; }
+.admin-crypto-spinner { animation: admin-crypto-spin .9s linear infinite; }
+@keyframes admin-crypto-spin { to { transform: rotate(360deg); } }
+@media (max-width: 560px) {
+  .admin-crypto-network-grid { grid-template-columns: 1fr; }
+  .admin-crypto-topups-footer { align-items: stretch; flex-direction: column; }
+  .admin-crypto-topups-footer .outline-button { justify-self: start; align-self: flex-start; }
+}

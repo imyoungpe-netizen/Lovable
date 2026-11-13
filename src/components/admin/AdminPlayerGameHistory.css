@@ -1,0 +1,42 @@
+.admin-player-history { min-width: 0; padding: 19px; }
+.admin-player-history-filters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: end; gap: 8px; margin-top: 14px; }
+.admin-player-history-filters label { display: grid; gap: 5px; color: #a8a194; font-size: 9px; }
+.admin-player-history-filters select, .admin-player-history-filters input { width: 100%; min-width: 0; min-height: 36px; padding: 0 9px; border: 1px solid rgba(255,255,255,.1); border-radius: 9px; background: #121216; color: #e4ddcf; font-size: 10px; }
+.admin-player-history-round-filter { grid-column: span 2; }
+.admin-player-history-reset { min-height: 36px; justify-content: center; color: #cbb879; font-size: 10px; }
+.admin-player-history-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.admin-player-history-heading h2 { display: flex; align-items: center; gap: 8px; margin: 5px 0; color: #e5dfd2; font-family: var(--font-display); font-size: 19px; }
+.admin-player-history-heading h2 svg { color: #cbb36d; }
+.admin-player-history-heading p { max-width: 620px; margin: 0; color: #9b9890; font-size: 11px; line-height: 1.55; }
+.admin-player-history-heading > button { flex: 0 0 auto; }
+.admin-player-history-list { display: grid; margin-top: 13px; }
+.admin-player-history-entry { min-width: 0; padding: 13px 1px; border-bottom: 1px solid rgba(255,255,255,.065); }
+.admin-player-history-entry-top { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 10px; }
+.admin-player-history-game { color: #e4ddcf; font-size: 11px; }
+.admin-player-history-entry-top time { margin-left: auto; color: #85828a; font-size: 9px; }
+.admin-player-history-outcome { padding: 3px 7px; border-radius: 99px; font-size: 8px; }
+.admin-player-history-outcome.is-win { color: #9bd8a6; background: rgba(72,166,91,.12); }
+.admin-player-history-outcome.is-loss { color: #dfa29a; background: rgba(186,69,69,.12); }
+.admin-player-history-outcome.is-refund { color: #d8c38a; background: rgba(202,166,84,.12); }
+.admin-player-history-details { margin: 7px 0; color: #b5b0a8; font-size: 10px; line-height: 1.5; overflow-wrap: anywhere; }
+.admin-player-history-values { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 16px; color: #85828a; font-size: 9px; }
+.admin-player-history-values b { display: inline-block; margin-left: 3px; color: #c9c2b5; font-family: var(--app-font-mono); font-size: 9px; font-weight: 500; }
+.admin-player-history-values .is-positive { color: #9bd8a6; }
+.admin-player-history-values .is-negative { color: #dfa29a; }
+.admin-player-history-balances { display: grid; gap: 3px; margin: 7px 0 0; color: #8d8990; font-size: 9px; }
+.admin-player-history-balance-change { display: flex; align-items: center; flex-wrap: wrap; gap: 5px 9px; }
+.admin-player-history-balance-change > span:first-child { color: #8d8990; }
+.admin-player-history-balance-change > span:nth-child(2) { color: #c4ae6c; }
+.admin-player-history-balances b { color: #d5cfbf; font-family: var(--app-font-mono); font-size: 9px; font-weight: 500; }
+.admin-player-history-balance-change time { color: #77737a; font-size: 8px; }
+.admin-player-history-state { margin: 17px 0 4px; color: #aaa6a1; font-size: 11px; line-height: 1.5; }
+.admin-player-history-state.is-error { color: #d69a8d; }
+.admin-player-history-state button { color: #dfc77e; text-decoration: underline; }
+.admin-player-history-pagination { display: flex; align-items: center; justify-content: center; gap: 13px; margin-top: 15px; color: #c5b583; font-size: 11px; }
+.admin-player-history-pagination button { min-width: 36px; min-height: 34px; justify-content: center; }
+@media (max-width: 600px) {
+  .admin-player-history { padding: 14px; }
+  .admin-player-history-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .admin-player-history-round-filter { grid-column: span 2; }
+  .admin-player-history-reset { grid-column: span 2; }
+}

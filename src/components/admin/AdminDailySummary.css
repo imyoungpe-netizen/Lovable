@@ -1,0 +1,17 @@
+.admin-daily-summary { margin:14px 0; padding:15px; }
+.admin-daily-summary-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.admin-daily-summary-heading h2 { margin:5px 0 0; color:#e7e2d7; font:600 17px/1.2 var(--app-font-serif); }
+.admin-daily-summary-heading > small { color:#85868d; font-size:8px; text-align:right; }
+.admin-daily-summary-table-wrap { width:100%; overflow-x:auto; }
+.admin-daily-summary-table { width:100%; border-collapse:collapse; font-size:9px; }
+.admin-daily-summary-table th,.admin-daily-summary-table td { padding:9px 7px; border-bottom:1px solid rgba(255,255,255,.065); text-align:right; white-space:nowrap; }
+.admin-daily-summary-table thead th { color:#8f9097; font:500 8px var(--app-font-mono); letter-spacing:.06em; text-transform:uppercase; }
+.admin-daily-summary-table th:first-child,.admin-daily-summary-table td:first-child { text-align:left; }
+.admin-daily-summary-table tbody th { color:#e5dfcf; font-weight:700; }
+.admin-daily-summary-table tbody td { color:#c7c5bd; font-variant-numeric:tabular-nums; }
+.admin-daily-summary-empty { margin:0; padding:16px 8px; color:#909197; font-size:10px; text-align:center; }
+@media (max-width:520px) {
+  .admin-daily-summary { padding:12px; }
+  .admin-daily-summary-heading { align-items:flex-start; flex-direction:column; }
+  .admin-daily-summary-heading > small { text-align:left; }
+}

@@ -1,0 +1,24 @@
+.admin-action-log { min-width: 0; padding: 19px; }
+.admin-action-log-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.admin-action-log-heading h2 { display: flex; align-items: center; gap: 8px; margin: 5px 0; color: #e5dfd2; font-family: var(--font-display); font-size: 19px; }
+.admin-action-log-heading h2 svg { color: #cbb36d; }
+.admin-action-log-heading p { margin: 0; color: #9b9890; font-size: 11px; line-height: 1.55; }
+.admin-action-log-heading > button { flex: 0 0 auto; }
+.admin-action-log-meta { display: flex; justify-content: space-between; align-items: center; margin: 17px 0 8px; padding: 10px 12px; border: 1px solid rgba(255,255,255,.07); border-radius: 9px; color: #99969a; background: rgba(255,255,255,.018); font-size: 10px; }
+.admin-action-log-meta b { color: #e4d29b; }
+.admin-action-log-list { display: grid; }
+.admin-action-log-entry { display: grid; grid-template-columns: 34px minmax(0,1fr); gap: 10px; padding: 13px 1px; border-bottom: 1px solid rgba(255,255,255,.065); }
+.admin-action-log-entry-mark { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid rgba(202,166,84,.18); border-radius: 9px; color: #cbb36d; background: rgba(202,166,84,.055); }
+.admin-action-log-entry-main { min-width: 0; }
+.admin-action-log-entry-title { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 5px 12px; }
+.admin-action-log-entry-title b { color: #e4ddcf; font-size: 11px; }
+.admin-action-log-entry-title time { color: #85828a; font-size: 9px; }
+.admin-action-log-entry-main > p { margin: 5px 0 7px; color: #d2cbbd; font-size: 11px; line-height: 1.5; overflow-wrap: anywhere; }
+.admin-action-log-people { display: grid; gap: 4px; color: #8f8c92; font-size: 9px; line-height: 1.5; overflow-wrap: anywhere; }
+.admin-action-log-people b { color: #bdb7aa; font-weight: 600; }
+.admin-action-log-state { margin: 17px 0 4px; color: #aaa6a1; font-size: 11px; line-height: 1.5; }
+.admin-action-log-state.is-error { color: #d69a8d; }
+.admin-action-log-state button { color: #dfc77e; text-decoration: underline; }
+.admin-action-log-pagination { display: flex; align-items: center; justify-content: center; gap: 13px; margin-top: 15px; color: #c5b583; font-size: 11px; }
+.admin-action-log-pagination button { min-width: 36px; min-height: 34px; justify-content: center; }
+@media (max-width: 480px) { .admin-action-log { padding: 14px; } }

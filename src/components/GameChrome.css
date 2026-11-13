@@ -1,0 +1,166 @@
+.game-wallet-menu {
+  position: relative;
+  z-index: 40;
+  width: max-content;
+  max-width: 100%;
+  flex: 0 1 auto;
+}
+
+.game-wallet-menu .game-balance {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  min-width: clamp(148px, 38vw, 174px);
+  min-height: 48px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+  padding: 7px 11px;
+  border: 1px solid rgba(211, 182, 111, .34);
+  border-radius: 15px;
+  color: #eadbb5;
+  background: linear-gradient(135deg, rgba(194, 161, 86, .17), rgba(27, 26, 29, .92) 68%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .055), 0 8px 22px rgba(0, 0, 0, .2);
+  text-align: left;
+  white-space: normal;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.game-wallet-menu .game-balance:hover,
+.game-wallet-menu .game-balance[aria-expanded="true"] {
+  border-color: rgba(224, 197, 126, .65);
+  background: linear-gradient(135deg, rgba(194, 161, 86, .23), rgba(31, 29, 32, .98) 68%);
+}
+
+.game-wallet-menu .game-balance:focus-visible,
+.game-wallet-popover a:focus-visible,
+.game-wallet-popover button:focus-visible {
+  outline: 2px solid #e4c979;
+  outline-offset: 2px;
+}
+
+.game-balance-icon {
+  flex: 0 0 auto;
+  color: #e2c36e;
+}
+
+.game-balance-copy {
+  display: grid;
+  min-width: 0;
+  flex: 0 1 auto;
+  gap: 3px;
+}
+
+.game-wallet-menu .game-balance-copy > small {
+  color: #a99d7f;
+  font: 600 7px/1 var(--app-font-mono, monospace);
+  letter-spacing: .14em;
+}
+
+.game-wallet-menu .game-balance-copy > b {
+  display: block;
+  overflow: visible;
+  min-width: 0;
+  color: #f0dfb2;
+  font: 700 clamp(11px, 3.2vw, 14px)/1.05 var(--app-font-mono, monospace);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.035em;
+  white-space: nowrap;
+}
+
+.game-wallet-menu .game-balance-copy > b > i {
+  margin-left: 4px;
+  color: #b7a878;
+  font-size: 8px;
+  font-style: normal;
+  letter-spacing: .02em;
+}
+
+.game-balance-chevron {
+  flex: 0 0 auto;
+  color: #b8a56e;
+  transition: transform .16s ease;
+}
+
+.game-balance-chevron.is-open {
+  transform: rotate(180deg);
+}
+
+.game-wallet-popover {
+  position: fixed;
+  z-index: 1000;
+  display: grid;
+  width: min(218px, calc(100vw - 32px));
+  gap: 3px;
+  padding: 7px;
+  border: 1px solid rgba(211, 182, 111, .27);
+  border-radius: 15px;
+  background: rgba(20, 20, 24, .98);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, .56);
+  backdrop-filter: blur(18px);
+  max-height: calc(100dvh - 24px);
+  overflow-y: auto;
+}
+
+.game-wallet-total {
+  display: grid;
+  gap: 4px;
+  padding: 8px 10px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.game-wallet-total span {
+  color: #999397;
+  font-size: 10px;
+}
+
+.game-wallet-total strong {
+  overflow: hidden;
+  color: #f0dfb2;
+  font: 700 13px/1.25 var(--app-font-mono, monospace);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.game-wallet-popover a,
+.game-wallet-popover button {
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 10px;
+  color: #e4ded3;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.game-wallet-popover a:hover,
+.game-wallet-popover button:hover {
+  color: #f0dfb2;
+  background: rgba(211, 182, 111, .11);
+}
+
+.game-wallet-popover a svg,
+.game-wallet-popover button svg {
+  flex: 0 0 auto;
+  color: #d7b96c;
+}
+
+@media (max-width: 380px) {
+  .game-wallet-menu .game-balance {
+    min-height: 44px;
+    padding: 6px 8px;
+    gap: 7px;
+  }
+
+  .game-balance-icon { width: 16px; height: 16px; }
+  .game-wallet-menu .game-balance-copy > b { font-size: 11px; }
+}

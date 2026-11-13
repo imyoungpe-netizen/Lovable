@@ -1,0 +1,13 @@
+.da-support-report-intro { max-width: 680px; margin: -5px 0 14px; color: #aaa6a1; font-size: 12px; line-height: 1.55; }
+.da-support-report-form { display: grid; gap: 13px; padding: 16px; border: 1px solid rgba(255,255,255,.08); border-radius: 18px; background: rgba(255,255,255,.018); }
+.da-support-report-form > label { display: grid; gap: 6px; color: #d9cfb7; font-size: 11px; }
+.da-support-report-form > label > span { color: #77737a; font-size: 9px; }
+.da-support-report-form input, .da-support-report-form select, .da-support-report-form textarea { width: 100%; min-width: 0; padding: 11px 12px; border: 1px solid rgba(255,255,255,.1); border-radius: 11px; outline: none; background: #121216; color: #e8e1d4; font: inherit; font-size: 12px; }
+.da-support-report-form textarea { min-height: 110px; resize: vertical; line-height: 1.5; }
+.da-support-report-form input:focus, .da-support-report-form select:focus, .da-support-report-form textarea:focus { border-color: rgba(202,177,105,.65); box-shadow: 0 0 0 2px rgba(202,177,105,.12); }
+.da-support-report-submit { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.da-support-report-feedback { flex: 1 1 240px; margin: 0; font-size: 11px; line-height: 1.5; }
+.da-support-report-feedback.is-success { color: #9bd8a6; }
+.da-support-report-feedback.is-error { color: #dfa29a; }
+.da-support-report-limit { color: #85828a; font-size: 10px; line-height: 1.5; }
+.da-support-report-limit a { color: #d4c17d; text-decoration: underline; }
